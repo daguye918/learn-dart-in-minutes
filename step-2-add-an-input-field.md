@@ -1,14 +1,14 @@
-#步骤2：添加一个输入框
+# 步骤2：添加一个输入框
 
 在这一步中，你将在你的 App 中添加一个输入框。作为一个用户文本输入框，Dart可以从中取得一个值。
 
 ---
 
-####编辑 piratebadge.html
+## 编辑 **piratebadge.html**
 
 在 class 为 widgets 的 ``<div>`` 中添加一个 ``<input>`` 标签。
 
-````
+```
 ...
 <div class="widgets">
   <div>
@@ -16,20 +16,19 @@
   </div>
 </div>
 ...
-
-````
+```
 
 - ``<input>`` 标签的 id 是 ``inputName``。Dart 使用 ``#inputName`` 的 CSS 选择器从 DOM 中选择这个元素
 
 ---
 
-####编辑 piratebadge.dart
+## 编辑 piratebadge.dart
 
 在文件的顶部引入 ``dart:html`` 库。
 
-````
+```
 import 'dart:html';
-````
+```
 
 - 这里从 ``dart:html`` 引入了所有的类和其他资源。
 
@@ -46,11 +45,11 @@ import 'dart:html';
 
 添加一个方法来监听输入框
 
-````
+```
 void main() {
   querySelector('#inputName').onInput.listen(updateBadge);
 }
-````
+```
 
 - 在 ``dart:html`` 中定义的 ``querySelector()`` 方法，获取到了指定的 DOM。这里，通过#inputName选择器获取到了指定的输入框。
 
@@ -73,13 +72,12 @@ void main() {
 
 用一个 ``top-level`` 级别的方法来实现一个事件方法。
 
-````
+```
 ...
 void updateBadge(Event e) { 
   querySelector('#badgeName').text = e.target.value;
 }
-
-````
+```
 
 - 这个函数将 ``badgename`` 元素的值设置成文本输入字段的值。
 
@@ -89,18 +87,19 @@ void updateBadge(Event e) {
 
 修复警告信息
 
-````
+```
 ...
 void updateBadge(Event e) { 
   querySelector('#badgeName').text = (e.target as InputElement).value;
 }
-````
+```
+
 - 在这个例子中，``e.target`` 是产生事件的输入源。
 
 
 ---
 
-####运行应用
+## 运行应用
 
 保存你的文件
 

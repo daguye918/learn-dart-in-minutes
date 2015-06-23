@@ -21,7 +21,6 @@ piratebadge.dart
 
 ```
 ...
-
 class PirateName {
 }
 ```  
@@ -29,7 +28,7 @@ class PirateName {
 - 这个类的声明给类提供一个名字  
 
 ---
-创建一个类级别的 Random 实体
+创建一个类级别的 **Random** 实体
 
 ```
 class PirateName {
@@ -38,11 +37,11 @@ class PirateName {
 ```
 
 - `static` 定义类级别的字段，就是说随机数发生器被所有的类实例共享。
-- Dart 编辑器强调静态名字。
+- **Dart** 编辑器强调静态名字。
 -  使用 `new` 调用一个构造函数。  
 
 ---  
-在类中加入两个成员变量,一个定义 first name ，一个定义 appellation 。  
+在类中加入两个成员变量,一个定义 **first name** ，一个定义 **appellation** 。  
 
 ```
 class PirateName {
@@ -51,10 +50,10 @@ class PirateName {
   String _appellation;
 }
 ``` 
-- 私有变量用`(_).`强调。Dart 没有 private 关键字。  
+- 私有变量用`(_).`强调。**Dart** 没有 **private** 关键字。  
  
 ---
-在类内创建两个静态的 List ，提供 names 和 appellations 两个集合供选择。
+在类内创建两个静态的 **List** ，提供 **names** 和 **appellations** 两个集合供选择。
 
 ```
 class PirateName {
@@ -68,10 +67,11 @@ class PirateName {
 }
 ```
 - `final` 修饰的变量不能更改。
-- 列表是 Dart 内置的，使用 List 来创建。
-- List 类提供 API 给列表。  
+- 列表是 **Dart** 内置的，使用 **List** 来创建。
+- **List** 类提供 **API** 给列表。  
 
 ---
+
  给类提供一个构造函数。
  
 ```
@@ -101,6 +101,7 @@ class PirateName {
 - 代码使用随机数作为列表的索引。    
 
 ---
+
 提供一个 `getter` 给私有字段。
 
 ```
@@ -110,12 +111,14 @@ class PirateName {
     _firstName.isEmpty ? '' : '$_firstName the $_appellation';
 }
 ```  
-- Getters 是一个特别的方法，提供访问对象的属性。
+
+- **Getters** 是一个特别的方法，提供访问对象的属性。
 - 三元运算符 `?:` 是 `if-then-else` 语句的简略写法。
 - 字符串插入  `('$_firstName the $_appellation') ` 让我们很容易从其他对象构建字符串。
 - 大箭头 `( => expr; )` 是 `{ return expr; }` 语法的一个简称。   
  
 ---
+
 重写 `toString()` 方法。  
 
 ```
@@ -124,22 +127,26 @@ class PirateName {
   String toString() => pirateName;
 }
 ```  
+
 - 因为对象实现 `toString()` 方法没有给很多的信息，很多类重写 `toString()` 。  
 - 当你调用 `print(anObject)` 得到字符串，返回值是 `anObject.toString()` 得到的。  
 - 重写 `toString()` 在的调试和输出的时候特别有用。  
  
 ---
-修改 `setBadgeName()` 方法，使用 PirateName 而不是 String 。    
+
+修改 `setBadgeName()` 方法，使用 **PirateName** 而不是 **String** 。    
 
 ```
 void setBadgeName(PirateName newName) {
   querySelector('#badgeName').text = newName.pirateName;
 }
 ```
-- 代码调用 getter 得到 PirateName 作为一个字符串。  
+
+- 代码调用 **getter** 得到 **PirateName** 作为一个字符串。  
   
 ---
-更改 `updateBadge()` 基于输入字段的值生成 PirateName 。  
+
+更改 ``updateBadge()``  基于输入字段的值生成 **PirateName** 。  
 
 ```
 void updateBadge(Event e) {
@@ -149,23 +156,25 @@ void updateBadge(Event e) {
   ...
 }
 ```
+
 - 调用构造函数给可选的命名参数提供一个值。  
 
 ---  
-更改 ` generateBadge() ` 生成一个 PirateName 而不是使用 `Anne Bonney`。
+
+更改 ` generateBadge() ` 生成一个 **PirateName** 而不是使用 `Anne Bonney`。
 
 ```
 void generateBadge(Event e) {
   setBadgeName(new PirateName());
 }
-
-```  
+``` 
+ 
 - 在这种情况下，通过无参数调用构造函数。
 
 ## 运行应用  
 使用 ` File > Save All` 保存。  
 
-运行应用正确点击 `piratebadge.html` 并选择 ` Run in Dartium` 。
+运行应用正确点击 `piratebadge.html` 并选择 ` Run in Dartium` 。  
 
 把你的应用和下面的比较。
 

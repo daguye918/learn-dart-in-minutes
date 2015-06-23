@@ -1,10 +1,11 @@
+
 # 总结和资源
 
 ## 想想你已经完成的
 
 这个代码实验室提供了大多数的 Dart 语言特性和许多库的特性概览。想学习更多的话请参考以下资源。
 
-#### Dart 语言
+## Dart 语言
 
 [A Tour of the Dart Language](https://www.dartlang.org/docs/dart-up-and-running/ch02.html) 介绍了如何使用 Dart 基本特性，从变量和运算符到类和库。这个代码实验室介绍了 Dart 的以下特性，这些特性在语言概览中都有详细介绍。
 
@@ -26,19 +27,19 @@
 
 ## 在线文档
 
-#### Dart 库
+## Dart 库
 
 * [A Tour of the Dart Language](https://www.dartlang.org/docs/dart-up-and-running/ch02.html) 介绍了如何使用 Dart 库的基本特性。
 
-#### 类的API文档
+## 类的API文档
 
 * [String](https://api.dartlang.org/dart_core/String.html), [List](https://api.dartlang.org/dart_core/List.html), [Map](https://api.dartlang.org/dart_core/Map.html), [Random](https://api.dartlang.org/dart_math/Random.html), [InputElement](https://api.dartlang.org/dart_html/InputElement.html), [ButtonElement](https://api.dartlang.org/dart_html/ButtonElement.html), [Event](https://api.dartlang.org/dart_html/Event.html), [HttpRequest](https://api.dartlang.org/dart_html/HttpRequest.html), [Future](https://api.dartlang.org/dart_async/Future.html) 和 [Stream](https://api.dartlang.org/dart_async/Stream.html)
 
-#### 库的API文档
+## 库的API文档
 
 * [dart:core](https://api.dartlang.org/dart_core.html), [dart:math](https://api.dartlang.org/dart_math.html), [dart:html](https://api.dartlang.org/dart_html.html), [dart:async](https://api.dartlang.org/dart_async.html) 和 [dart:convert](https://api.dartlang.org/dart_convert.html)
 
-#### JSON和本地存储的API文档
+## JSON和本地存储的API文档
 
 * [LocalStorage](https://api.dartlang.org/dart_html/Window.html#localStorage) 和 [JSON](https://api.dartlang.org/dart_convert.html#JSON)
 

@@ -34,11 +34,12 @@
         
 ```
 
-### 关键信息
+关键信息
 
 - 文件包含 JSON 编码的 map ，它包含两个字符串列表。
 
 ## 编辑 piratebadge.html
+
 显示输入框和按钮
 
 ```
@@ -52,9 +53,11 @@
 ...
 
 ```
+
 - Dart 代码启用输入框和按钮，然后名字成功从 JSON 文件中读出来。
 
 ## 编辑 piratebadge.dart
+
 在文件顶部添加一个 `import`  
 
 ```
@@ -70,6 +73,7 @@ import 'dart:async' show Future;
 -  `Future` 提供一个方式在将来得到一个值。（对于 JavaScript 开发者：Futures 和 Promises 一样。）
 
 ---
+
 把 `names` 和 `appellations` 替换成这些静态的，空的列表。
 
 ```
@@ -86,7 +90,9 @@ class PirateName {
 - `[ ]` 相当于 `new List()` 。  
 
 - List 是一个通用的类型- List 可以包含任何类型的对象。如果你打算让一个列表只包含字符串，你可以把它声明成为 `List<String>` 。
-___
+
+---
+
 添加两个静态的方法到 PirateName 类：
 
 ```
@@ -128,10 +134,11 @@ void main() {
   ...
 }
 ```
+
 - 存储  span 元素以便重复使用，而不是从 DOM 里重复查询它。
 
-___ 
-
+---
+ 
 对 `main()` 函数做这些更改
 
 ```
@@ -145,9 +152,10 @@ void main() {
   ...
 }
 ```
+
 - 在全局变量存储这些 span 元素，同时在局部变量里存储 input 元素。
 
-___
+---
 
 然后添加代码获得 JSON 文件里面的名字，同时处理好异常。
 
@@ -173,9 +181,11 @@ main() async {
 - 使用 `await ` 关键字执行暂停直到将来完成。
 - 当 将来通过 `readyThePirates()` 成功完成返回，设置界面。
 - 使用 `try` 和 `catch` 来检测和处理错误。
-___
+
+---
 
 ## 运行应用
+
 通过 `File > Save All` 保存文件。
 
 运行应用通过正确点击 `piratebadge.html`，选择 `Run in Dartium`。

@@ -1,28 +1,28 @@
-#步骤1：运行一个框架应用
+# 步骤1：运行一个框架应用
 
 在这一步中，你打开源文件，熟悉你自己的 Dart 和 HTML 代码，然后运行这个 App。
 
 ---
 
-####新建一个 1-blankbadge 目录
+## 新建一个 1-blankbadge 目录
 
 在Dart编辑器中，点击 ``1-blankbadge`` 下 ``web`` 目录左边的小箭头，展开 ``web`` 目录。这个目录包含一个 ``piratebadge.css`` 文件，一个 ``piratebadge.dart`` ，和一个 ``piratebadge.html`` 文件。
 
 ---
 
-####打开文件
+## 打开文件
 
 在Dart编辑器中，通过双击文件名来打开 ``piratebadge.dart`` 文件和 ``piratebadge.html`` 文件
 
 ---
 
-####查看代码
+## 查看代码
 
 熟悉一下这个框架应用的 HTML 和 Dart 代码。
 
 ``piratebadge.html``
 
-````
+```
 <html>
   <head>
     <meta charset="utf-8">
@@ -50,7 +50,7 @@
     <script src="packages/browser/dart.js"></script>
   </body>
 </html>
-````
+```
 
 关键信息：
 
@@ -70,12 +70,11 @@
 
 ``piratebadge.dart``
 
-````
+```
 void main() {
   // 你的应用从这里开始
 }
-
-````
+```
 
 关键信息：
 
@@ -88,7 +87,7 @@ void main() {
 
 ---
 
-####运行这个应用
+## 运行这个应用
 
 在Dart编辑器中运行一个应用：右击 ``piratebadge.html`` 文件然后选择 ``Run in Dartium``。
 
